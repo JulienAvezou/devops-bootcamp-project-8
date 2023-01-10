@@ -26,4 +26,8 @@ kubectl cluster-info -> check that cluster is running at same endpoint as shown 
 ![Capture d’écran 2023-01-10 à 10 20 32](https://user-images.githubusercontent.com/62488871/211511618-c0d75cba-b0e0-4b21-9dfb-db5e69271bd7.png)
 <img width="660" alt="Capture d’écran 2023-01-10 à 10 20 43" src="https://user-images.githubusercontent.com/62488871/211511626-095d8c51-ce97-461f-aa2c-76fd00a38f0f.png">
 
+### Configure Autoscaling in EKS cluster
+- autoscaling group created by default when created node group
+- create custom policy to enable autoscaling & attach new policy to existing node group IAM role
+![Capture d’écran 2023-01-10 à 10 56 36](https://user-images.githubusercontent.com/62488871/211519945-1467f882-8027-4e09-ad10-a4330a1bd4ea.png)
 
