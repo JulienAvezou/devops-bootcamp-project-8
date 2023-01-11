@@ -41,7 +41,7 @@ kubectl cluster-info -> check that cluster is running at same endpoint as shown 
 <img width="473" alt="Capture d’écran 2023-01-11 à 08 53 29" src="https://user-images.githubusercontent.com/62488871/211749113-b8c2a051-f113-4219-a1ea-6ab932d7cbc2.png">
 <img width="629" alt="Capture d’écran 2023-01-11 à 08 53 49" src="https://user-images.githubusercontent.com/62488871/211749134-cd605445-f2cb-4013-8164-fff3764e99c1.png">
 - change min nodes to 1 to check that autoscaler scales down to 1
-![Capture d’écran 2023-01-11 à 09 12 33](https://user-images.githubusercontent.com/62488871/211752755-116215c0-83b4-4a9f-b31e-377b810e5247.png)
+![Capture d’écran 2023-01-11 à 09 12 33](https://user-images.githubusercontent.com/62488871/211758079-ef40cfc8-630c-4eea-abd0-11b581916891.png)
 
 ### Deploy app on EKS
 - create deployment and service 
