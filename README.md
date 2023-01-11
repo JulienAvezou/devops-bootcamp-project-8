@@ -46,6 +46,7 @@ kubectl cluster-info -> check that cluster is running at same endpoint as shown 
 ### Deploy app on EKS
 - create deployment and service 
 <img width="667" alt="Capture d’écran 2023-01-11 à 09 09 54" src="https://user-images.githubusercontent.com/62488871/211752882-1d182d47-ef31-4340-a3c7-bd5c09db0a09.png">
-![Capture d’écran 2023-01-11 à 09 16 56](https://user-images.githubusercontent.com/62488871/211755468-d5249c40-fd6e-43da-9404-b3a9e9f84dd6.png)
+
+![Capture d’écran 2023-01-11 à 09 16 56](https://user-images.githubusercontent.com/62488871/211757980-f95993b1-ce7e-4051-a2e1-b2a6a0d57742.png)
 
 
