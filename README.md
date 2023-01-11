@@ -30,4 +30,22 @@ kubectl cluster-info -> check that cluster is running at same endpoint as shown 
 - autoscaling group created by default when created node group
 - create custom policy to enable autoscaling & attach new policy to existing node group IAM role
 ![Capture d’écran 2023-01-10 à 10 56 36](https://user-images.githubusercontent.com/62488871/211519945-1467f882-8027-4e09-ad10-a4330a1bd4ea.png)
+- check that tags are configured for autoscaling group (should be created by default)
+![Capture d’écran 2023-01-11 à 08 10 42](https://user-images.githubusercontent.com/62488871/211740715-d3f39ad4-3318-48f1-859c-8cc439970946.png)
+- create deployment for autoscaler
+<img width="663" alt="Capture d’écran 2023-01-11 à 08 20 42" src="https://user-images.githubusercontent.com/62488871/211742470-2a50449f-7d36-485e-a9d4-883999c6a60f.png">
+<img width="386" alt="Capture d’écran 2023-01-11 à 08 22 37" src="https://user-images.githubusercontent.com/62488871/211742829-dbba587a-fb36-479c-9601-08a0e502f5dc.png">
+- edit the deployment (add annotation, replace placeholder with actual cluster name)
+- check logs for pod running cluster-autoscaler
+<img width="664" alt="Capture d’écran 2023-01-11 à 08 51 46" src="https://user-images.githubusercontent.com/62488871/211749091-e03b53ab-1233-4c55-8f87-b508cc15f077.png">
+<img width="473" alt="Capture d’écran 2023-01-11 à 08 53 29" src="https://user-images.githubusercontent.com/62488871/211749113-b8c2a051-f113-4219-a1ea-6ab932d7cbc2.png">
+<img width="629" alt="Capture d’écran 2023-01-11 à 08 53 49" src="https://user-images.githubusercontent.com/62488871/211749134-cd605445-f2cb-4013-8164-fff3764e99c1.png">
+- change min nodes to 1 to check that autoscaler scales down to 1
+![Capture d’écran 2023-01-11 à 09 12 33](https://user-images.githubusercontent.com/62488871/211752755-116215c0-83b4-4a9f-b31e-377b810e5247.png)
+
+### Deploy app on EKS
+- create deployment and service 
+<img width="667" alt="Capture d’écran 2023-01-11 à 09 09 54" src="https://user-images.githubusercontent.com/62488871/211752882-1d182d47-ef31-4340-a3c7-bd5c09db0a09.png">
+![Capture d’écran 2023-01-11 à 09 16 56](https://user-images.githubusercontent.com/62488871/211755468-d5249c40-fd6e-43da-9404-b3a9e9f84dd6.png)
+
 
