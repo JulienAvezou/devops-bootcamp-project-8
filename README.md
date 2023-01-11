@@ -50,4 +50,9 @@ kubectl cluster-info -> check that cluster is running at same endpoint as shown 
 
 ![Capture d’écran 2023-01-11 à 09 16 56](https://user-images.githubusercontent.com/62488871/211757980-f95993b1-ce7e-4051-a2e1-b2a6a0d57742.png)
 
+### Create Fargate Profile
+- create role for fargate
+![Capture d’écran 2023-01-11 à 17 37 12](https://user-images.githubusercontent.com/62488871/211863521-38ee79fb-3997-4f23-900f-f6fbdb3837e7.png)
+- create fargate profile - specifies which pods should use fargate
+![Capture d’écran 2023-01-11 à 17 57 29](https://user-images.githubusercontent.com/62488871/211868655-549ca581-3561-4a63-a9d4-6e54c4a62bf5.png)
 
